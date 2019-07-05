@@ -10,7 +10,7 @@ prediction.setModelTypeAsResNet()
 
 prediction.setModelPath("./resnet50_weights_tf_dim_ordering_tf_kernels.h5")
 
-prediction.loadModel()
+model = prediction.loadModel()
 
 print("start")
 predictions, percentage_probabilities = prediction.predictImage("./Penguins.jpg", result_count=5)
